@@ -28,3 +28,7 @@ The implemented solution assumes the following:
 * It took me a while to understand the requirements and to browse through the mocked data to find duplicates, so i could create a solution (some assumptions were made and explained above)
 
 * It took me two hours to have the functionality working and the tests passing as it is now. Some optimizations i have left out because of the time.
+
+### Optimizations
+* Refactor clean function to be one only method
+* Implement looking for nested "fields" ("views")
