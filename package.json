@@ -1,0 +1,15 @@
+{
+  "name": "coding-exercise-master",
+  "version": "1.0.0",
+  "description": "knack coding exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "go": "node index.js"
+  },
+  "author": "Victor Molero",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
