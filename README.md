@@ -7,7 +7,12 @@ $ npm i // install Jest for running tests
 $ npm run go // runs the exercise
 ```
 
-### Tests
+As described in exercise, the cleaned json can be found at:
+```
+./clean_application.json
+```
+
+### Run tests
 
 ```
 $ npm test
@@ -19,8 +24,7 @@ The implemented solution assumes the following:
 
 * The duplicity is only decided by checking the `key` attribute for both scene/views and object/fields
 * Only duplicates within the same scope are removed.
-* There is only one level of fields (views) inside objects (scenes). If seen sublevels, but it's too late now.
-* It uses recursion but there is room for more code optimization, since `cleanObjects` and `cleanScenes` can be written in one function accepting params.
+* There is only one level of fields (or views) inside objects (or scenes). If seen sublevels, but it's too late now.
 * The input file and are hardcoded filenames
 
 ### Progress in 2 hours time
@@ -29,6 +33,8 @@ The implemented solution assumes the following:
 
 * It took me two hours to have the functionality working and the tests passing as it is now. Some optimizations i have left out because of the time.
 
+* The implementations uses a recursive function to filter out duplicates element is an array by `key` within the object and scene attributes.
+
 ### Optimizations
-* Refactor clean function to be one only method
-* Implement looking for nested "fields" ("views")
+* Refactor the `cleanObjects` and `cleanScenes` functions in one function accepting params.
+* Implement removal for nested "fields/views" ("fields/views inside other fields/views and so on")
